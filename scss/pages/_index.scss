@@ -209,7 +209,6 @@
 
 .recycle{
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 60px;
   @include mobile{
     flex-direction: column;
@@ -225,7 +224,7 @@
   width: 730px;
   height: 520px;
   @include mobile{
-    width: 345px;
+    width: 100%;
     height: 520px;
   }
 }

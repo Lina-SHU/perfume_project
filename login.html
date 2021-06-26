@@ -41,16 +41,23 @@
     </div>
   </div>
 
-  <div class="wrap login">
+  <div class="wrap login pt-8 pb-8">
     <div class="login-img"></div>
-    <div class="login-content">
+    <div class="login-content ml-3">
       <h2>Login in</h2>
-      <form>
-        <label for="email">帳號</label>
+      <form class="login-form">
+        <p><label for="email">帳號</label></p>
         <input type="text" id="email" placeholder="email@example.com">
-        <label for="Password">密碼</label>
+        <p class="mt-2"><label for="Password">密碼</label></p>
         <input type="password" id="Password" placeholder="Password">
       </form>
+      <div class="login-method">
+        <a href="#">忘記密碼</a>
+        <div class="button-group">
+          <button class="register-btn" type="button">註冊</button>
+          <button class="login-btn" type="button">登入</button>
+        </div>
+      </div>
     </div>
   </div>
 
