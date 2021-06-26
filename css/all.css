@@ -71,10 +71,6 @@ a {
   margin-top: 10px;
 }
 
-.mt-8 {
-  margin-top: 80px;
-}
-
 .mb-1 {
   margin-bottom: 10px;
 }
@@ -83,8 +79,16 @@ a {
   margin-bottom: 60px;
 }
 
+.mb-8 {
+  margin-bottom: 80px;
+}
+
 .ml-1 {
   margin-left: 10px;
+}
+
+.mr-1 {
+  margin-right: 10px;
 }
 
 .ml-3 {
@@ -97,6 +101,10 @@ a {
 
 .pt-1 {
   padding-top: 10px;
+}
+
+.pt-8 {
+  padding-top: 80px;
 }
 
 .wrap {
