@@ -795,7 +795,7 @@ footer .footer-menu a {
 @media (max-width: 768px) {
   .products {
     padding-top: 42px;
-    margin-bottom: 42px;
+    padding-bottom: 42px;
   }
 }
 
