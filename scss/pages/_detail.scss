@@ -1,0 +1,105 @@
+.detail{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @include mobile{
+    flex-wrap: wrap;
+    padding-top: $spacer-5;
+  }
+}
+
+.detail-img{
+  width: 730px;
+  @include mobile{
+    width: 100%;
+  }
+  .inner-img{
+    display: flex;
+    justify-content: space-between;
+    @include mobile{
+      flex-wrap: wrap;
+      margin-bottom: $spacer-2;
+      margin-top: $spacer-2;
+      img:first-child{
+        margin-bottom: $spacer-2;
+      }
+    }
+    img{
+      width: 350px;
+    }
+  }
+}
+
+.detail-content{
+  width: 350px;
+  @include mobile{
+    margin-left: 0;
+  }
+  .mobile-product{
+    display: none;
+    @include mobile{
+      display: block;
+      margin-bottom: 28px;
+    }
+  }
+  h2{
+    font-size: $topic-fz;
+    font-weight: bold;
+    line-height: 48px;
+  }
+  p{
+    font-size: $content-fz;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .favorite{
+    margin-top: $spacer-1;
+    @include mobile{
+      margin-bottom: $spacer-5;
+    }
+    i{
+      color: $theme-color;
+    }
+  }
+  .intro{
+    margin-bottom: $spacer-4;
+  }
+  .price{
+    margin-bottom: 12px;
+  }
+  h4{
+    font-weight: bold;
+    margin-bottom: $spacer-1;
+  }
+  .number-group{
+    position: relative;
+    .cart-number{
+      border-radius: 4px 0 0 4px;
+      width: 160px;
+      padding: $spacer-2;
+      border: 1px solid $theme-color;
+      &:focus{
+        outline: none;
+      }
+      @include mobile{
+        width: 157px;
+      }
+    }
+    .addCartBtn{
+      position: absolute;
+      padding: 14px 55px;
+      background: $theme-color;
+      color: $white;
+      width: 190px;
+      border: 1px solid $theme-color;
+      border-radius: 0 4px 4px 0;
+      @include mobile{
+        width: 188px;
+      }
+      &:hover{
+        background: #6C4700;
+        cursor: pointer;
+      }
+    }
+  }
+}
