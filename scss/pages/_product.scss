@@ -106,6 +106,7 @@
   display: flex;
   justify-content: center;
   a{
+    color: $secondary-color;
     font-size: $content-fz;
     line-height: 30px;
     &:hover{
