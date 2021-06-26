@@ -121,7 +121,7 @@ a {
 }
 .header h1 a {
   display: block;
-  background: url("../../images/d’Perfume.png") no-repeat;
+  background: url("../images/d’Perfume.png") no-repeat;
   width: 120px;
   height: 38px;
   text-indent: 101%;
@@ -341,7 +341,7 @@ footer .footer-menu a {
 }
 
 .heroHeader {
-  background: url("../../images/index1.jpg") no-repeat;
+  background: url("../images/index1.jpg") no-repeat;
   background-size: cover;
   background-position: center center;
   height: 870px;
