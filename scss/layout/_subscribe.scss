@@ -1,0 +1,44 @@
+.subscribe{
+  background: url('../images/index10.jpg') no-repeat;
+  background-position: center center;
+  object-fit: cover;
+  background-size: 160%;
+  padding-top: 312px;
+  padding-bottom: 112px;
+  @include mobile{
+    background-position: 10% center;
+  }
+  .subscribe-content{
+    font-size: 32px;
+    color: $secondary-color;
+    line-height: 48px;
+  }
+  .input-group{
+    margin-top: 20px;
+    position: relative;
+    .email{
+      width: 211px;
+      border: 2px solid $theme-color;
+      padding: 20px 16px;
+      &:focus{
+        outline: none;
+      }
+    }
+    .submit{
+      position: absolute;
+      left: 215px;
+      top: 1px;
+      border: 2px solid $theme-color;
+      width: 127px;
+      background: $theme-color;
+      color: #fff;
+      text-align: center;
+      display: block;
+      padding: 20px 27px;
+      &:hover{
+        background: #6C4700;
+        border: 2px solid #6C4700;
+      }
+    }
+  }
+}

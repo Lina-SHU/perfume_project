@@ -1,0 +1,120 @@
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mobile{
+    margin-top: 42px;
+    margin-bottom: 42px;
+  }
+}
+
+.product-item{
+  width: 255px;
+  @include mobile{
+    width: 165px;
+  }
+  .img{
+    height: 255px;
+    @include mobile{
+      height: 165px;
+    }
+  }
+  h3{
+    font-size: $title-fz;
+    line-height: 36px;
+    font-weight: bold;
+    @include mobile{
+      font-size: $content-fz;
+    }
+  }
+  p{
+    line-height: 24px;
+  }
+  del{
+    color: $secondary-color;
+  }
+  .icon{
+    color: $theme-color;
+    margin-top: 3px;
+    .heart{
+      margin-right: $spacer-1 + 3px;
+    }
+  }
+  .products1{
+    background: url('../images/products1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .products2{
+    background: url('../images/index6.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+  }
+  .products3{
+    background: url('../images/products3.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+  }
+  .products4{
+    background: url('../images/products4.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+  }
+  .products5{
+    background: url('../images/products5.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+  }
+  .products6{
+    background: url('../images/index4.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 center;
+  }
+  .products7{
+    background: url('../images/products7.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .products8{
+    background: url('../images/products8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .products9{
+    background: url('../images/index3.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .products10{
+    background: url('../images/products10.jpg') no-repeat;
+    background-size: cover;
+    background-position: center 20%;
+  }
+  .products11{
+    background: url('../images/products11.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  .products12{
+    background: url('../images/products12.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  a{
+    font-size: $content-fz;
+    line-height: 30px;
+    &:hover{
+      color: $theme-color;
+      border-bottom: 1px solid $theme-color;
+    }
+  }
+  .active{
+    color: $theme-color;
+    border-bottom: 1px solid $theme-color;
+  }
+}

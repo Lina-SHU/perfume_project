@@ -1,0 +1,21 @@
+.list{
+  background: $theme-color;
+}
+
+.list-theme{
+  display: flex;
+  padding: 14px 0;
+  @include mobile{
+    display: none;
+  }
+  a{
+    display: block;
+    color: $white;
+    font-size: $content-fz;
+    padding-left: 14px;
+    padding-right: 14px;
+    &:first-child{
+      padding-left: 0;
+    }
+  }
+}

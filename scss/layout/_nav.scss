@@ -1,0 +1,111 @@
+.wrap{
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  h1 a{
+    display: block;
+    background: url('../../images/d’Perfume.png') no-repeat;
+    width: 120px;
+    height: 38px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .List-m{
+    display: none;
+  }
+  .menu{ 
+  display: flex;
+  }
+  .menu li{
+    color: $secondary-color;
+    font-size: $title-fz;
+  }
+  .menu i{
+    color: $secondary-color;
+    font-size: 24px;
+    margin-right: 4px;
+  }
+  .menu-m{
+    display: none;
+  }
+}
+
+@include mobile {
+  .header{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    .List-m{
+      display: flex;
+      font-size: $title-fz;
+      .cart{
+        position: relative;
+        margin-right: 28px;
+      }
+      .cart i{
+        color: $secondary-color;
+      }
+      span{
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 15px;
+        height: 15px;
+        border-radius: 7px;
+        background: #916000;
+        color: #fff;
+        font-size: 8px;
+        text-align: center;
+      }
+    }
+    .menu{
+      display: block;
+      max-height: 0px;
+      overflow: hidden;
+      position: absolute;
+      top: 56px;
+      width: 100%;
+      left: 0px;
+      transition: max-height 1s;
+      z-index: 120;
+    }
+    .menu.active{
+      max-height: 500px;
+      background: #707070;
+      text-align: center;
+    }
+    .menu li{
+      margin-right: 0;
+    }
+    .menu a{
+      display: block;
+      width: 100%;
+      color: #fff;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #fff;
+    }
+    .menu li a:hover{
+      background: #c4c3c3;
+    }
+    .menu li i{
+      display: none;
+    }
+    .menu-m{
+      display: block;
+    }
+    .menu-n{
+      display: none;
+    }
+  }
+}

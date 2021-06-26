@@ -1,0 +1,260 @@
+.heroHeader{
+  background: url('../../images/index1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 870px;
+
+  .hero{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 870px;
+    @include mobile {
+      justify-content: center;
+      height: 480px;
+    }
+  }
+  
+  .title{
+    width: 445px;
+    color: $white;
+  }
+  .title h2{
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .title p{
+    font-size: $title-fz;
+    line-height: 36px;
+    margin-bottom: $spacer-2;
+  }
+  .title a{
+    display: block;
+    width: 350px;
+    border: 2px solid $white;
+    border-radius: 30px;
+    color: $white;
+    text-align: center;
+    padding-top: $spacer-2;
+    padding-bottom: $spacer-2;
+    font-size: $title-fz;
+  }
+}
+
+@include mobile {
+  .heroHeader{
+    height: 480px;
+  }
+}
+
+.brands{
+  margin-bottom: 60px;
+}
+
+.brand{
+  display: flex;
+  flex-wrap: wrap;
+  .brand-intro{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 110px;
+    @include mobile{
+      width: 100%;
+      margin-left: 0px;
+      margin-bottom: $spacer-4;
+    }
+    h3{
+      font-size: $topic-fz;
+      line-height: 48px;
+      font-weight: bold;
+    }
+    p{
+      font-size: $content-fz;
+      line-height: 30px;
+    }
+  }
+  .brand-img{
+    width: 50%;
+    height: 555px;
+    overflow: hidden;
+    @include mobile{
+      width: 100%;
+      height: 350px;
+    }
+    .img-h{
+      height: 555px;
+      @include mobile{
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+  .brand-img{
+    background: url('../images/index4.jpg') no-repeat; 
+    background-position: 10% center;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .special{
+    height: 1080px;
+    img{
+      height: 1080px;
+    }
+  }
+  .special-text{
+    margin-bottom: 52px;
+  }
+}
+
+.read-more{
+  color: $more-color;
+  margin-top: $spacer-2;
+  font-weight: bold;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.brand-reverse{
+  flex-direction: row-reverse;
+  .brand-intro{
+    margin-right: 110px;
+    margin-left: 0;
+    @include mobile{
+      width: 100%;
+      margin-right: 0px;
+    }
+  }
+}
+
+.index-products{
+  background: $index-bg-color;
+  padding: 40px 0;
+  margin-bottom: 60px;
+  @include mobile{
+    padding-bottom: 18px;
+  }
+}
+
+.product{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.index-products-item{
+  width: 350px;
+  @include mobile{
+    width: 345px;
+    margin-bottom: $spacer-3;
+  }
+  .product-img{
+    height: 540px;
+    overflow: hidden;
+    position: relative;
+    @include mobile{
+      height: 350px;
+    }
+    .img-p{
+      height: 540px;
+      object-fit: cover;
+    }
+    .sold-out{
+      width: 350px;
+      height: 540px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, .3);
+      color: $white;
+      font-size: $title-fz;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include mobile{
+        height: 350px;
+      }
+    }
+  }
+  .product-img1{
+    background: url('../images/index6.jpg') no-repeat; 
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .product-img2{
+    background: url('../images/index7.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    object-fit: cover; 
+  }
+  h4{
+    font-size: $title-fz;
+    margin-top: $spacer-1;
+  }
+  .price{
+    margin-top: $spacer-2;
+    del{
+      color: $secondary-color;
+      margin-left: $spacer-1;
+    }
+  }
+}
+
+.recycle{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.recycle-img{
+  background: url('../images/index9.jpg') no-repeat;
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  width: 730px;
+  height: 520px;
+  @include mobile{
+    width: 345px;
+    height: 520px;
+  }
+}
+
+.recycle-content{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include mobile{
+    width: 100%;
+    margin-left: 0;
+  }
+  h3{
+    font-size: $topic-fz;
+    line-height: 48px;
+  }
+  .subtitle{
+    font-size: $content-fz;
+    margin-bottom: $spacer-2;
+    @include mobile{
+      margin-bottom: 0;
+    }
+  }
+  p{
+    margin-bottom: $spacer-2;
+    line-height: 24px;
+    @include mobile{
+      margin-bottom: 0;
+    }
+  }
+}
