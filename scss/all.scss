@@ -3,10 +3,13 @@
 @import './helpers/mixin';
 @import './helpers/util';
 @import './layout/nav';
+
 @import './layout/list';
 @import './layout/subscribe';
 @import './layout/footer';
+
 @import './pages/index';
 @import './pages/product';
 @import './pages/login';
 @import './pages/detail';
+@import './pages/order';

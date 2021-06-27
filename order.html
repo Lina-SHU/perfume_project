@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/27bd1ef315.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+  <div class="wrap header">
+    <h1><a href="#">Perfume</a></h1>
+    <div class="List-m">
+      <div class="cart">
+        <span>3</span>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <a href="#" class="burgerList"><i class="fas fa-bars"></i></a>
+    </div>
+    <ul class="menu">
+      <li class="mr-3"><a href="#"><i class="fas fa-gift"></i>Product</a></li>
+      <li class="mr-3"><a href="#"><i class="fas fa-user"></i>log in</a></li>
+      <li class="mr-3"><a href="#"><i class="fas fa-heart"></i>Wishlist</a></li>
+      <li class="mr-3 menu-m"><a href="#"><i class="fas fa-heart"></i>Blog</a></li>
+      <li class="mr-3 menu-n"><a href="#"><i class="fas fa-shopping-cart"></i>Cart(3)</a></li>
+      <li class="mr-3 menu-m"><a href="#"><i class="fas fa-heart"></i>Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="list">
+    <div class="wrap">
+      <ul class="list-theme">
+        <li><a href="#">CHANEL</a></li>
+        <li><a href="#">Jo Malone</a></li>
+        <li><a href="#">Curology</a></li>
+        <li><a href="#">Dior</a></li>
+        <li><a href="#">Chloe</a></li>
+        <li><a href="#">ZARA</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="wrap order pt-8 pb-6">
+    <div class="order-menu">
+      <h2>會員中心</h2>
+      <ul class="menu-list">
+        <li><a href="#" class="active">會員資料修改</a></li>
+        <li><a href="#">訂單查詢</a></li>
+        <li><a href="#">退／換貨申請</a></li>
+      </ul>
+    </div>
+    <div class="order-content">
+      <div class="member-info ml-3">
+        <h3><i class="fas fa-user"></i>會員編碼 <span class="memberId">T00020080615</span></h3>
+        <table class="member-detail">
+          <tr>
+            <td width="95px">購物車</td>
+            <td>56</td>
+          </tr>
+          <tr>
+            <td>我的收藏</td>
+            <td>23</td>
+          </tr>
+          <tr>
+            <td>完成訂單</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <td>會員紅利</td>
+            <td>2680</td>
+          </tr>
+          <tr>
+            <td>邀請碼</td>
+            <td>TK2075</td>
+          </tr>
+        </table>
+        <p class="note">新戶輸入邀請碼即可獲贈紅利點數1000點</p>
+      </div>
+      <div class="personal">
+        <h3>個人資料修改</h3>
+        <table class="personal-info">
+          <tr>
+            <td width="95px" class="pb-2"><label for="account">會員帳號</label></td>
+            <td class="pl-1">email@example.com</td>
+          </tr>
+          <tr>
+            <td class="pb-2"><label for="name">會員姓名</label></td>
+            <td><input type="text" id="name"></td>
+          </tr>
+          <tr>
+            <td class="pb-2"><label for="gender">會員性別</label></td>
+            <td>
+              <select id="gender">
+                <option value="girl">女</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="pb-2"><label for="email">電子信箱</label></td>
+            <td><input type="email" id="email" placeholder="email@example.com"></td>
+          </tr>
+          <tr>
+            <td class="pb-2"><label for="phone">手機號碼</label></td>
+            <td><input type="text" id="phone"></td>
+          </tr>
+          <tr>
+            <td><label for="address">聯絡地址</label></td>
+            <td class="pb-2">
+              <select id="location" class="select">
+                <option value="">台灣及離島</option>
+              </select><br>
+              <select id="coumtry" class="select">
+                <option value="高雄市">高雄市</option>
+              </select>
+              <select id="town" class="select">
+                <option value="鹽埕區">鹽埕區</option>
+              </select>
+              <input type="text" id="address" placeholder="請輸入地址">
+              <div class="new">
+                <input type="checkbox" id="new-info" value="new-info">
+                <label for="new-info">我願意收到最新優惠情報</label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sendAddress">配送地址</label></td>
+            <td class="pb-2">
+              <select id="location" class="select">
+                <option value="">台灣及離島</option>
+              </select><br>
+              <select id="coumtry" class="select">
+                <option value="高雄市">高雄市</option>
+              </select>
+              <select id="town" class="select">
+                <option value="鹽埕區">鹽埕區</option>
+              </select>
+              <input type="text" id="sendAddress" placeholder="請輸入地址">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button class="editBtn" type="button">確定修改</button></td>
+          </tr>
+        </table>
+        <h3>修改密碼</h3>
+        <table class="edit-password">
+          <tr>
+            <td width="95px" class="pb-2"><label for="oldPassword">舊密碼</label></td>
+            <td><input type="password" id="oldPassword"></td>
+          </tr>
+          <tr>
+            <td class="pb-2"><label for="newPassword">新密碼</label></td>
+            <td><input type="password" id="newPassword"></td>
+          </tr>
+          <tr>
+            <td class="pb-2"><label for="confirmPassword">確認密碼</label></td>
+            <td><input type="password" id="confirmPassword">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button class="editBtn" type="button">變更密碼</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer>
+    <div class="wrap footer">
+      <div class="footer-logo">
+        <img src="images/d’Perfumewhite.png" alt="logowhite">
+        <p>© 2020. All Rights Reserved.</p>
+      </div>
+      <ul class="footer-menu">
+        <li class="pt-1 pb-1"><a href="#">Product</a></li>
+        <li class="pt-1 pb-1"><a href="#">Blog</a></li>
+        <li class="pt-1 pb-1"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+.order{
+  display: flex;
+  @include mobile{
+    flex-wrap: wrap;
+    padding-top: $spacer-5;
+    padding-bottom: $spacer-5;
+  }
+}
+
+.order-menu{
+  width: 97px;
+  color: $order-color;
+  margin-right: 94px;
+  @include mobile{
+    width: 100%;
+    margin-right: 0;
+  }
+  h2{
+    font-size: $content-fz;
+    margin-bottom: 38px;
+    @include mobile{
+      display: none;
+    }
+  }
+  .menu-list{
+    @include mobile{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .menu-list li{
+    margin-bottom: $spacer-3;
+    a{
+      color: $order-color;
+      display: block;
+      line-height: 24px;
+      border-bottom: 2px solid $white;
+      &:hover{
+        border-bottom: 2px solid $theme-color;
+      }
+    }
+    .active{
+      border-bottom: 2px solid $theme-color;
+    }
+  }
+}
+
+.order-content{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  @include mobile{
+    flex-wrap: wrap;
+  }
+}
+
+.personal{
+  width: 635px;
+  @include mobile{
+    width: 100%;
+  }
+  h3{
+    padding-bottom: $spacer-1;
+    border-bottom: 1px solid $form-color;
+    margin-bottom: $spacer-2;
+    font-weight: bold;
+  }
+}
+
+.member-info{
+  color: $form-color;
+  width: 255px;
+  @include mobile{
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  h3{
+    margin-bottom: $spacer-3;
+  }
+  i{
+    margin-right: 5px;
+  }
+  .memberId{
+    margin-left: 6px;
+  }
+  .member-detail tr{
+    td{
+      padding: $spacer-1 0;
+    }
+  }
+  .note{
+    font-size: 14px;
+  }
+}
+
+.personal-info, .edit-password{
+  @include mobile{
+    width: 100%;
+  }
+  color: $form-color;
+  td:first-child{
+    width: 90px;
+  }
+  input{
+    width: 350px;
+    padding: $spacer-1 10px;
+    border: 1px solid $form-color;
+    border-radius: 4px;
+    @include mobile{
+      width: 100%;
+    }
+  }
+  .editBtn{
+    width: 160px;
+    text-align: center;
+    color: $white;
+    background: $theme-color;
+    border: 1px solid $theme-color;
+    padding: $spacer-1;
+    border-radius: 4px;
+    &:hover{
+      cursor: pointer;
+      background: #6C4700;
+      border: 1px solid #6C4700;
+    }
+    @include mobile{
+      width: 165px;
+    }
+  }
+}
+
+.personal-info{
+  margin-bottom: $spacer-6;
+  #gender{
+    padding: $spacer-1 $spacer-2;
+  }
+  .select{
+    width: 160px;
+    padding: $spacer-1 10px;
+    border: 1px solid $form-color;
+    border-radius: 4px;
+    margin-bottom: $spacer-1;
+  }
+  #new-info{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    margin-top: 12px;
+  }
+}
